@@ -1,0 +1,4 @@
+input_str = input("Enter comma-separated words: ")
+sorted_words = sorted(input_str.split(','))
+
+print(','.join(sorted_words))
