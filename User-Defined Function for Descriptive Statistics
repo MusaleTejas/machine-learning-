@@ -1,0 +1,13 @@
+def descriptive_stats(numbers):
+    return {
+        'Sum': sum(numbers),
+        'Count': len(numbers),
+        'Min': min(numbers),
+        'Mean': sum(numbers) / len(numbers),
+        'Max': max(numbers)
+    }
+
+# Example usage:
+input_numbers = [1, 2, 3, 4, 5]
+result = descriptive_stats(input_numbers)
+print(result)
