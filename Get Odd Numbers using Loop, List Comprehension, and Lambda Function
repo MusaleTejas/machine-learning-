@@ -1,0 +1,11 @@
+# i. Using loops
+odd_numbers_loop = []
+for num in li:
+    if num % 2 != 0:
+        odd_numbers_loop.append(num)
+
+# ii. Using list comprehensions
+odd_numbers_lc = [num for num in li if num % 2 != 0]
+
+# iii. Using lambda function with filter
+odd_numbers_lambda = list(filter(lambda x: x % 2 != 0, li))
