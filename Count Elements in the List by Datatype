@@ -1,0 +1,5 @@
+my_list = [2, 3, 'Py', '10', 1, 'SQL', 5.5, True, 3, 'John', None, 7]
+result = {'int': 0, 'float': 0, 'str': 0, 'bool': 0, 'NoneType': 0}
+for element in my_list:
+    result[type(element).__name__] += 1
+print(result)
