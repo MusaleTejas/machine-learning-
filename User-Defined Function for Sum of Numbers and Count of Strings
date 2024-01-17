@@ -1,0 +1,7 @@
+def my_func(lst):
+    num_sum = sum([val for val in lst if isinstance(val, (int, float))])
+    str_count = sum([1 for val in lst if isinstance(val, str)])
+    return {'Sum': num_sum, 'Count_of_Strs': str_count}
+
+l1 = [2, 3, 'Py', '10', 1, 'SQL', 5.5, True, 3, 'John', None, 7]
+print(my_func(l1))
