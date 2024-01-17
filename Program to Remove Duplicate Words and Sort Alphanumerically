@@ -1,0 +1,4 @@
+input_str = input("Enter whitespace-separated words: ")
+unique_sorted_words = sorted(set(input_str.split()))
+
+print(' '.join(unique_sorted_words))
