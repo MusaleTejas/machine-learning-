@@ -1,0 +1,14 @@
+def calculate_area(shape, **kwargs):
+    if shape == 'square' and 'side' in kwargs:
+        return kwargs['side'] ** 2
+    elif shape == 'rectangle' and 'length' in kwargs and 'width' in kwargs:
+        return kwargs['length'] * kwargs['width']
+    elif shape == 'circle' and 'radius' in kwargs:
+        return 3.14 * kwargs['radius'] ** 2
+    else:
+        return "Invalid input. Please check the shape and dimensions."
+
+# Example usage:
+print(calculate_area('square', side=4))
+print(calculate_area('rectangle', length=3, width=5))
+print(calculate_area('circle', radius=2))
