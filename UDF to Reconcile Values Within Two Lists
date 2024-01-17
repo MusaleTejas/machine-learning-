@@ -1,0 +1,11 @@
+def reconcile_lists(l1, l2):
+    matched = list(set(l1) & set(l2))
+    only_in_l1 = list(set(l1) - set(l2))
+    only_in_l2 = list(set(l2) - set(l1))
+    return {'Matched': matched, 'Only in l1': only_in_l1, 'Only in l2': only_in_l2}
+
+# Example usage:
+l1 = ['January', 'February', 'March', 'May', 'June', 'September', 'December']
+l2 = ['January', 'February', 'April', 'June', 'October', 'December']
+result = reconcile_lists(l1, l2)
+print(result)
